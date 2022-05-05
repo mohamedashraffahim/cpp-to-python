@@ -25,6 +25,7 @@ int main()
             if (num == 1)
             {
                string input;
+               cout << "Please enter your string: ";
                cin.clear();
                cin.sync();
                getline(cin, input);
@@ -34,11 +35,12 @@ int main()
             else if (num == 2)
             {
                string input;
+               cout << "Please enter your string: ";
                cin.clear();
                cin.sync();
                getline(cin, input);
                lower(input);
-               input = no_spaces(input);
+               input = replace(input);
                cout << input;
             }  
         }
