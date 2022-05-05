@@ -25,7 +25,7 @@ typedef unsigned int uint32;
 
 
 //This function removes all spaces from the string
-std::string no_spaces(std::string input)
+std::string replace(std::string input)
 {
     input.erase(remove(input.begin(), input.end(), ' '), input.end());
     return input;
@@ -59,5 +59,5 @@ int test(int input)
 //This function shows the available functions in this library
 void functions()
 {
-    cout << "The available functions are\n1-lower():which changes the characters of the string to the lowercase\n2-no_spaces():removes all spaces from the string\n";
+    cout << "The available functions are\n1-lower():which changes the characters of the string to the lowercase\n2-replace():removes all spaces from the string\n";
 } 
