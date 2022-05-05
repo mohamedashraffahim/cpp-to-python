@@ -13,7 +13,7 @@
 
 
 //Remove all spaces in the string
-std::string no_spaces(std::string input);
+std::string replace(std::string input);
 
 //Change all string characters to lowercase
 std::string lower(std::string input);
