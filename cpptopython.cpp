@@ -7,15 +7,15 @@
 #include <fstream>
 #include <cstring>
 #include <cmath>
-#include <algorithm>
+// #include <algorithm>
 #include <string>
 #include "cpptopython.h"
 
 using namespace std;
 
-using std::cout;
-using std::cin;
-using std::endl;
+// using std::cout;
+// using std::cin;
+// using std::endl;
 
 
 typedef const char* uint128;
@@ -25,8 +25,9 @@ typedef unsigned int uint32;
 
 
 //This function removes all spaces from the string
-std::string replace(std::string input)
+string replace(string input)
 {
+
     input.erase(remove(input.begin(), input.end(), ' '), input.end());
     return input;
 }
@@ -34,12 +35,12 @@ std::string replace(std::string input)
 
 
 //This function changes all the characters in the string to the lowercase
-std::string lower(std::string input)
+string lower(string input)
 {
-    std::string input_lower;
-    int size;
-    size = std::size(input);
-    for (int i = 0; i < size; i++)
+    string input_lower;
+    int size2;
+    size2 = std::size(input);
+    for (int i = 0; i < size2; i++)
     {
         input_lower += tolower(input[i]);                           
     }
